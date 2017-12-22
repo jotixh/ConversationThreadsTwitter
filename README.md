@@ -6,42 +6,37 @@ It was used in our paper [1] published in ECIR 2018 conference.
 
 If you want to use this dataset for research prurposes, please cite us as:
 
-[1] Herrera, Jose; Poblete, Barbara; Denis; Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval (2018). 
+[1] Herrera, Jose; Poblete, Barbara; Denis, Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval (2018). 
 
 
 # Dataset description
 
+The dataset is in a json file. The description is as follows. 
 
-The dataset is a set of files in json format. 
-Each file is a set of threads retrieved using our query formulations. 
-And, for each thread, we retrieve their replies. 
+For example, 
 
-
-```python
-{
-    "id": "cur-155",
-    "q": "What is a female moose called?",
-    "THREADS": {
-        "634786506570248192": {
-            "replies": [
-                "634783395797671936",
-                "634785975479087104",
-                "634786506570248192"
-            ]
-        },
-        "747481816483958785": {
-            "replies": [
-                "747481816483958785"
-            ]
-        },
-
-        ....
-}
-
+```json
+ 't9-689': {
+            'q': 'What is the highest mountain in the world?',
+            'r': 'LA060190-0193 | Mt. Everest | '},
+            'THREADS': {'0': ['855270972626051074', '855273460506873857'],
+                        '1': ['853095581354528770']},
 ```
 
-The id of threads are not necesarily the initial tweet of a thread. 
-For example, the thread `634786506570248192` is basically the id of the thread, but is not the initial thread. 
-Because the correct order is `634783395797671936`, `634785975479087104`, `634786506570248192`.
+* `t9-689` is a internal id of a question. 
 
-We did in that way because, as we mention in our paper, we first retrieve tweet, and then, if it belongs to a thread, we retrieve the other replies. But the id of the thread is the tweet that it was found firstly. 
+* `q`: is the questions (retrieved from TREC and curated dataset of QA, see references above).
+
+* `r`: possible answers. Please, omit replies such as 'LA060190-0193' (they are internals id of TREC). 
+
+* `THREADS`: it is composed by the pair (key, value), where *key* is the relevance and the *value* are the threads (i.e., set of tweets). 
+In the example, the (key, value)  '0':  ['855270972626051074', '855273460506873857'] means that the thread composed by tweets 855270972626051074 and 855273460506873857, was annotated as not relevant (value '0').
+The second thread, composed by just one tweet 853095581354528770 was annotated as relevant (value '1').
+
+
+
+
+# References:
+
+* TREC QA http://trec.nist.gov/data/qa.html 
+* Curated dataset https://github.com/brmson/dataset-factoid-curated)
