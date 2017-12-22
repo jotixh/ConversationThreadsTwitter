@@ -15,7 +15,7 @@ The dataset is in a json file. The description is as follows.
 
 For example, 
 
-```json
+```bash
  't9-689': {
             'q': 'What is the highest mountain in the world?',
             'r': 'LA060190-0193 | Mt. Everest | '},
