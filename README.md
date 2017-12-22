@@ -1,10 +1,9 @@
 # Conversation Threads Twitter
 
+We share our dataset of conversation threads yielded on Twitter. 
+It was used in our paper [1] published on ECIR 2018. 
 
-This is a dataset of conversation threads yielded on Twitter. 
-It was used in our paper [1] published in ECIR 2018 conference. 
-
-If you want to use this dataset for research prurposes, please cite us as:
+If you want to use this dataset, please cite us as:
 
 [1] Herrera, Jose; Poblete, Barbara; Denis, Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval (2018). 
 
