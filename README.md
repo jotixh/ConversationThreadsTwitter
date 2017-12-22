@@ -13,7 +13,7 @@ If you want to use this dataset for research prurposes, please cite us as:
 
 The dataset is in a json file. The description is as follows. 
 
-For example, 
+For example, one instance is as 
 
 ```bash
  't9-689': {
@@ -23,16 +23,15 @@ For example,
                         '1': ['853095581354528770']},
 ```
 
-* `t9-689` is a internal id of a question. 
+* `t9-689`: it is a internal identification of a question used by us. 
 
-* `q`: is the questions (retrieved from TREC and curated dataset of QA, see references above).
+* `q`: it is the questions text (obtained from TREC and curated dataset of QA, see references below).
 
-* `r`: possible answers. Please, omit replies such as 'LA060190-0193' (they are internals id of TREC). 
+* `r`: it is the possible answers of question *q*. NOTE: please, omit replies such as 'LA060190-0193', because they are internals id of TREC. 
 
-* `THREADS`: it is composed by the pair (key, value), where *key* is the relevance and the *value* are the threads (i.e., set of tweets). 
-In the example, the (key, value)  '0':  ['855270972626051074', '855273460506873857'] means that the thread composed by tweets 855270972626051074 and 855273460506873857, was annotated as not relevant (value '0').
-The second thread, composed by just one tweet 853095581354528770 was annotated as relevant (value '1').
-
+* `THREADS`: it is a set candidate threads that could answer the question *q*. Each thread is composed by the pair (key, value), where *key* is the relevance and the *value* are the candidate threads (i.e., set of tweets).
+In the above example, the (key, value) pair ('0', ['855270972626051074', '855273460506873857']) means that the candidate thread (composed by tweets: 855270972626051074 and 855273460506873857) has not the answer. 
+The second thread, composed by just one tweet 853095581354528770 was annotated as '1', it means that is highly probably that the thread contains the correct answer. 
 
 
 
