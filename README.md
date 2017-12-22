@@ -10,9 +10,9 @@ If you want to use this dataset, please cite us as:
 
 # Dataset description
 
-The dataset is in a json file. The description is as follows. 
+The dataset is in a json file. 
 
-For example, one instance is as 
+For example, an instance of a question with their candidate threads is as follows:
 
 ```bash
  't9-689': {
