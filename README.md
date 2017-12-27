@@ -32,9 +32,15 @@ For example, an instance of a question with their candidate threads is as follow
 In the above example, the (key, value) pair ('0', ['855270972626051074', '855273460506873857']) means that the candidate thread (composed by tweets: 855270972626051074 and 855273460506873857) has not the answer. 
 The second thread, composed by just one tweet 853095581354528770 was annotated as '1', it means that is highly probably that the thread contains the correct answer. 
 
+# Features 
 
+The image `FeaturesDescription.png` describe the set of features used for the training process. 
 
 # References:
 
 * TREC QA http://trec.nist.gov/data/qa.html 
 * Curated dataset https://github.com/brmson/dataset-factoid-curated)
+
+If you have some questions, please write us to jherrera [@] dcc uchile cl.
+
+
