@@ -1,12 +1,9 @@
 # Conversation Threads Twitter
 
 We share our dataset of conversation threads yielded on Twitter. 
-It was used in our paper [1] published on ECIR 2018. 
-
-If you want to use this dataset, please cite us as:
-
-[1] Herrera, Jose; Poblete, Barbara; Denis, Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval (2018). 
-
+It was used in our paper published on ECIR 2018. 
+If you want to use this dataset, please cite us. 
+The references are at the end. 
 
 # Dataset description
 
@@ -37,6 +34,24 @@ The second thread, composed by just one tweet 853095581354528770 was annotated a
 The image `FeaturesDescription.png` describe the set of features used for the training process. 
 
 # References:
+
+## Plain
+
+[1] Herrera, Jose; Poblete, Barbara; Denis, Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval (2018). 
+
+## Bibtex
+
+```bibtex
+@inproceedings{Herrera:ecir2018,
+        address = {Grenoble, France},
+        author = {Herrera, Jose and {Poblete Barbara} and Denis, Parra},
+        booktitle = {Proceeding of ECIR 2018},
+        title = {Learning to Leverage Microblog Data for QA},
+        year = {2018}
+}
+```
+
+## Other references
 
 * TREC QA http://trec.nist.gov/data/qa.html 
 * Curated dataset https://github.com/brmson/dataset-factoid-curated)
