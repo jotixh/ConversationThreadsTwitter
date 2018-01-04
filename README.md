@@ -3,7 +3,7 @@
 We share our dataset of conversation threads yielded on Twitter. 
 It was used in our paper published on ECIR 2018. 
 If you want to use this dataset, please cite us. 
-The references are at the end. 
+See the references at the end of this page. 
 
 # Dataset description
 
@@ -33,7 +33,8 @@ The second thread, composed by just one tweet 853095581354528770 was annotated a
 
 The image `FeaturesDescription.png` describe the set of features used for the training process. 
 
-# References:
+
+# References
 
 ## Plain
 
