@@ -38,7 +38,7 @@ The image `FeaturesDescription.png` describe the set of features used for the tr
 
 ## Plain
 
-[1] Herrera, Jose; Poblete, Barbara; Denis, Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval (2018). 
+* Herrera, Jose; Poblete, Barbara; Denis, Parra. Learning to Leverage Microblog Data for QA. In Proceeding of European Conference on Information Retrieval ECIR (2018). 
 
 ## Bibtex
 
@@ -46,7 +46,7 @@ The image `FeaturesDescription.png` describe the set of features used for the tr
 @inproceedings{Herrera:ecir2018,
         address = {Grenoble, France},
         author = {Herrera, Jose and {Poblete Barbara} and Denis, Parra},
-        booktitle = {Proceeding of ECIR 2018},
+        booktitle = {Proceeding of European Conference on Information Retrieval (ECIR 2018)},
         title = {Learning to Leverage Microblog Data for QA},
         year = {2018}
 }
