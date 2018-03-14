@@ -45,7 +45,7 @@ The image `FeaturesDescription.png` describe the set of features used for the tr
 ```bibtex
 @inproceedings{Herrera:ecir2018,
         address = {Grenoble, France},
-        author = {Herrera, Jose and {Poblete Barbara} and Denis, Parra},
+        author = {Herrera, Jose and Poblete, Barbara and Denis, Parra},
         booktitle = {Proceeding of European Conference on Information Retrieval (ECIR 2018)},
         title = {Learning to Leverage Microblog Data for QA},
         year = {2018}
